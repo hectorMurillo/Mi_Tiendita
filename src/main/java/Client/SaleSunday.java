@@ -1,5 +1,9 @@
 package Client;
 
-public class SaleSunday extends  Sale{
+import DayBehavior.DiscountSeniorDay;
 
+public class SaleSunday extends  Sale{
+    public SaleSunday() {
+        this.discountBehavior = new DiscountSeniorDay();
+    }
 }
